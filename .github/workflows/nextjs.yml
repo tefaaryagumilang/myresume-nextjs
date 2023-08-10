@@ -38,13 +38,13 @@ jobs:
           node-version: "18" # Adjust as needed
           
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build with Next.js
-        run: npm build
+        run: yarn build
 
       - name: Export static HTML
-        run: npm export
+        run: yarn export
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
