@@ -58,7 +58,7 @@ export default function Home() {
         <Script type="text/javascript" src="js/scripts.js"></Script>
         <Script type="text/javascript" src="js/particles.js"></Script>
         <Script type="text/javascript" src="js/app.js"></Script>
-        <Script type="text/javascript" src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></Script>
+        <Script type="text/javascript" src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></Script>
         </>
   )
 }
