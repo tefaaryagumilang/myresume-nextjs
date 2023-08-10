@@ -1,10 +1,10 @@
-import Head from '../components/Head'
+import Head from 'src/app/components/Head'
 // import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Footer from 'src/app/components/Footer'
 import Script from 'next/script'
 import dynamic from 'next/dynamic';
 
-const Navbar = dynamic(() => import('../components/Navbar'), {
+const Navbar = dynamic(() => import('src/app/components/Navbar'), {
   ssr: false,
 });
 
