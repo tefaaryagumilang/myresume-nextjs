@@ -9,11 +9,6 @@ export default function Navbar() {
                     <Link
                         className="navbar-brand"
                         href="/"
-                        style={{
-                            backgroundImage: 'url("assets/img/clouds.png")',
-                            backgroundSize: "cover",
-                            color: "#FFD700"
-                        }}
                     >
                         My Resume
                     </Link>
