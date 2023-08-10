@@ -400,9 +400,9 @@ export default function Experience() {
 
         <Footer />
         
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
-        <Script src="/js/scripts.js"></Script>
-        <Script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></Script>
+        <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
+        <Script type="text/javascript" src="js/scripts.js"></Script>
+        <Script type="text/javascript" src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></Script>
         </>
   )
 }
