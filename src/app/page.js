@@ -55,9 +55,9 @@ export default function Home() {
         <Footer />
         
         <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
-        <Script type="text/javascript" src="/js/scripts.js"></Script>
-        <Script type="text/javascript" src="/js/particles.js"></Script>
-        <Script type="text/javascript" src="/js/app.js"></Script>
+        <Script type="text/javascript" src="js/scripts.js"></Script>
+        <Script type="text/javascript" src="js/particles.js"></Script>
+        <Script type="text/javascript" src="js/app.js"></Script>
         <Script type="text/javascript" src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></Script>
         </>
   )
