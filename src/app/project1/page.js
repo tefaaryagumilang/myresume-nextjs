@@ -18,7 +18,7 @@ export default function Project1() {
             className="page-section bg-light text-black mb-0 mt-5"
             id="portfolio"
             style={{
-                backgroundImage: 'url("../assets/img/webb.png")',
+                backgroundImage: 'url("/assets/img/webb.png")',
                 backgroundRepeat: "repeat"
             }}
             >
@@ -30,7 +30,7 @@ export default function Project1() {
                 {/* About Section Content*/}
                 <div className="row">
                 <div className="col-lg-4">
-                    <img src="../assets/img/portfolio/Sentuh.png" width="100%" alt="" />
+                    <img src="/assets/img/portfolio/Sentuh.png" width="100%" alt="" />
                 </div>
                 <div className="col-lg-8">
                     <p style={{ textAlign: "justify" }}>
