@@ -1,95 +1,64 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Head from './components/Head'
+// import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Script from 'next/script'
+import dynamic from 'next/dynamic';
+
+const Navbar = dynamic(() => import('./components/Navbar'), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+        <>
+        <Head />
+        <Navbar />
+        
+        <header className="masthead text-white text-center">
+          <div id="particles-js" />
+          <div className="container d-flex align-items-center flex-column">
+              {/* Masthead Avatar Image */}
+              <img
+                  className="masthead-avatar mb-5"
+                  src="assets/img/me_square.png"
+                  style={{
+                      border: "1px solid",
+                      borderRadius: "50%",
+                      boxShadow: "5px 10px #888888"
+                  }}
+                  alt="Profile"
+              />
+              {/* Masthead Heading */}
+              <h1 className="masthead-heading text-uppercase mb-2">Tefa Arya Gumilang</h1>
+              {/* Masthead Subheading */}
+              <p className="masthead-subheading font-weight-light mb-0">
+                  DevOps Engineer - Freelancer
+              </p>
+              <br />
+              <div className="row">
+                  <div className="col-lg-12 m-auto">
+                      <p className="lead">
+                          Hi! I'm Tefa Arya Gumilang. I currently work at PT. Gudang Solusi Group
+                          as a DevOps Engineer in the R&amp;D Division. I'm also a Freelancer
+                          offering One Stop IT Services to fulfill client needs based on their requests.
+                          With over 5 years of experience in the IT field, I have a strong background to serve clients.
+                      </p>
+                      <p className="lead">
+                          I graduated in Computer and Network Engineering from State Vocational
+                          High School 2 Baleendah.
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </header>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <Footer />
+        
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
+        <Script src="/js/scripts.js"></Script>
+        <Script src="/js/particles.js"></Script>
+        <Script src="/js/app.js"></Script>
+        <Script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></Script>
+        </>
   )
 }
