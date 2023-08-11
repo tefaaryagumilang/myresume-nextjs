@@ -1,10 +1,14 @@
 import Head from 'src/app/components/Head'
 // import Navbar from '../components/Navbar'
 import Footer from 'src/app/components/Footer'
-import Script from 'next/script'
+// import Script from 'next/script'
 import dynamic from 'next/dynamic';
 
 const Navbar = dynamic(() => import('src/app/components/Navbar'), {
+  ssr: false,
+});
+
+const Script = dynamic(() => import('next/script'), {
   ssr: false,
 });
 
@@ -18,7 +22,7 @@ export default function Training() {
           className="page-section text-white mb-0 mt-5"
           id="training"
         >
-          <div id="particles-js" />
+          <div id="tsparticles"></div>
           <div className="container">
             {/* About Section Heading*/}
             <h2 className="page-section-heading text-center text-uppercase pb-4">
@@ -90,11 +94,11 @@ export default function Training() {
 
         <Footer />
         
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
-        <Script src="js/scripts.js"></Script>
-        <Script src="js/particles.js"></Script>
-        <Script src="js/app.js"></Script>
-        <Script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></Script>
+        <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
+        <Script type="text/javascript" src="js/scripts.js"></Script>
+        <Script type="text/javascript" src="js/tsparticles.js"></Script>
+        <Script type="text/javascript" src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></Script>
+        <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.0/tsparticles.min.js"></Script>
         </>
   )
 }
