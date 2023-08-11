@@ -16,20 +16,17 @@ export default function Portfolio() {
         <Navbar />
       
         <section
-          className="page-section bg-light text-black mb-0 mt-5"
+          className="page-section text-white mb-0 mt-5"
           id="portfolio"
-          style={{
-            backgroundImage: 'url("assets/img/webb.png")',
-            backgroundRepeat: "repeat"
-          }}
         >
+          <div id="particles-js" />
           <div className="container">
             {/* About Section Heading*/}
-            <h2 className="page-section-heading text-center text-uppercase text-black pb-4">
+            <h2 className="page-section-heading text-center text-uppercase pb-4">
               Portfolio &amp; Showcase
             </h2>
             {/* About Section Content*/}
-            <div className="row" style={{ textAlign: "center" }}>
+            <div className="row text-black" style={{ textAlign: "center" }}>
               <div className="col-lg-4 mb-2">
                 <div className="card">
                   <div className="card-header">
@@ -137,7 +134,9 @@ export default function Portfolio() {
         
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
         <Script src="js/scripts.js"></Script>
-        <Script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></Script>
+        <Script src="js/particles.js"></Script>
+        <Script src="js/app.js"></Script>
+        <Script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></Script>
         </>
   )
 }

@@ -7,8 +7,12 @@ export default function Navbar() {
             <nav className="navbar navbar-expand-lg bg-black text-uppercase fixed-top" id="mainNav">
                 <div className="container">
                     <Link
-                        className="navbar-brand"
+                        className="navbar-brand bg-white text-black p-2"
                         href="/"
+                        style={{
+                            borderRadius: "5%",
+                            color: "#FFD700"
+                        }}
                     >
                         My Resume
                     </Link>

@@ -1,7 +1,12 @@
-import Head from '../components/Head'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Head from 'src/app/components/Head'
+// import Navbar from 'src/app/components/Navbar'
+import Footer from 'src/app/components/Footer'
 import Script from 'next/script'
+import dynamic from 'next/dynamic';
+
+const Navbar = dynamic(() => import('src/app/components/Navbar'), {
+  ssr: false,
+});
 
 export default function Skill() {
   return (
@@ -10,13 +15,10 @@ export default function Skill() {
         <Navbar />
         
         <section
-          className="page-section bg-light text-black mb-0 mt-5"
+          className="page-section mb-0 mt-5 text-white"
           id="skill"
-          style={{
-            backgroundImage: 'url("assets/img/webb.png")',
-            backgroundRepeat: "repeat"
-          }}
         >
+          <div id="particles-js" />
           <div className="container">
             {/* About Section Heading*/}
             <h2 className="page-section-heading text-center text-uppercase text-black pb-4">
@@ -194,7 +196,7 @@ export default function Skill() {
         <Script src="js/scripts.js"></Script>
         <Script src="js/particles.js"></Script>
         <Script src="js/app.js"></Script>
-        <Script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossOrigin="anonymous"></Script>
+        <Script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></Script>
         </>
   )
 }

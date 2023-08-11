@@ -31,7 +31,7 @@ export default function Home() {
               {/* Masthead Heading */}
               <h1 className="masthead-heading text-uppercase mb-2">Tefa Arya Gumilang</h1>
               {/* Masthead Subheading */}
-              <p className="masthead-subheading font-weight-light mb-0">
+              <p className="masthead-subheading font-weight-light mb-0 bg-white text-black p-2">
                   DevOps Engineer - Freelancer
               </p>
               <br />
